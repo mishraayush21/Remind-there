@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext"
+        android:hint="Enter the task"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_below="@id/edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selLocation"
+        android:backgroundTint="@color/lightBlue"
+        android:text="Select Location"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longText"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="41dp"
+        android:backgroundTint="@color/lightBlue"
+        android:text="Save"
+        android:id="@+id/save"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/latText"
+            android:layout_below="@+id/selLocation"
+            android:textSize="15dp"
+            />
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/longText"
+            android:layout_below="@+id/latText"
+            android:textSize="15dp"
+            />
+
+
+</RelativeLayout>
