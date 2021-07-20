@@ -165,8 +165,9 @@ public class MainActivity extends AppCompatActivity implements SetData {
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
 
-            Toast.makeText(this, "FFFFFFF", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "FFFFFFF", Toast.LENGTH_SHORT).show();
             Log.e(TAG,"Permission error");
+
             return ;
         }
         client2 = LocationServices.getFusedLocationProviderClient(this);
